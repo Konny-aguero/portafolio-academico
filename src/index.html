@@ -3,104 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Académico - UCR</title>
+    <title>Portafolio - Konny Agüero Díaz</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para íconos -->
 </head>
 <body>
-<!-- Encabezado de Navegación -->
+
+<!-- Encabezado de Navegación (Combinando estilo viejo y nuevo) -->
 <header class="navbar">
-    <div class="logo">Portafolio Académico</div>
+    <div class="logo">Konny Agüero Díaz</div>
     <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://github.com"
-           target="_blank"
-           class="btn-github">Mi GitHub</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contáctame</a>
     </nav>
 </header>
-<!-- Sección de Héroe (Sobre Mí) -->
-<section id="sobre-mi" class="hero-section">
+
+<!-- Sección de Héroe con estilo UCR clásico y foto moderna -->
+<section id="inicio" class="hero-section">
     <div class="hero-content">
-        <h1>Hola, soy <span class="highlight">Estudiante UCR</span></h1>
+        <h1>Hola, soy <span class="highlight">Konny Agüero</span></h1>
         <p class="subtitle">
-            Estudiante de Informática Empresarial |
-            Futuro Full-Stack Developer
+            Estudiante de Informática Empresarial
         </p>
         <p class="description">
-            Bienvenido a mi espacio de proyectos académicos.
-            Aquí registro el desarrollo de las aplicaciones
-            e investigaciones de la carrera en el Recinto de Paraíso.
+            Bienvenido a mi espacio académico y profesional. Aquí registro mi desarrollo en el área de
+            programación, bases de datos y tecnologías web.
         </p>
+        <div class="hero-buttons">
+            <a href="CV%20-%20Konny%20Aguero%20Díaz.pdf" download="CV_Konny_Aguero.pdf" class="btn btn-primary">Descargar CV</a>
+        </div>
+    </div>
+    <div class="hero-image-container">
+        <img src="konny.png" alt="Konny Agüero Díaz" class="profile-pic">
     </div>
 </section>
-<section id="habilidades" class="skills-section">
-    <h2>Mis Habilidades</h2>
+<section id="sobre-mi" class="about-section minimal">
+    <h2>Sobre Mí</h2>
+    <div class="about-content">
+        <p class="lead">Estudiante de Informática Empresarial en la UCR con experiencia en desarrollo de software frontend y backend, con una fuerte base en Java.</p>
 
-    <div class="skills-container">
-        <div class="skill-tag">HTML5</div>
-        <div class="skill-tag">CSS3</div>
-        <div class="skill-tag">Flexbox</div>
-        <div class="skill-tag">CSS Grid</div>
-        <div class="skill-tag">Git</div>
-        <div class="skill-tag">GitHub</div>
-        <div class="skill-tag">Java</div>
+        <p>Destaco por mi capacidad lógica para la resolución de problemas, el trabajo en equipo y una rápida adaptación a nuevas tecnologías. Disfruto del aprendizaje autónomo y continuo, manteniendo siempre una alta atención al detalle. Mi objetivo principal es colaborar mediante una comunicación efectiva para desarrollar soluciones de software eficientes que aporten valor real, integrando mis conocimientos tanto en bases de datos relacionales como en las diversas arquitecturas del sistema.</p>
     </div>
 </section>
-<!-- Sección de Proyectos (CSS Grid) -->
-<main id="proyectos" class="projects-section">
-    <h2>Mis Proyectos Académicos</h2>
-    <div class="projects-grid">
-        <!-- Tarjeta de Proyecto 1 -->
-        <article class="project-card">
-            <div class="project-badge">Back-end</div>
-            <h3>Taller 1: Servidor HTTP Java</h3>
-            <p>
-                Implementación desde cero de un servidor HTTP local
-                nativo utilizando las librerías del JDK para
-                entender el flujo cliente-servidor.
-            </p>
-            <div class="project-tech">
+
+<!-- Sección de Habilidades (Estilo Líneas Neón) -->
+<section id="habilidades" class="skills-section minimal">
+    <h2>Mis Habilidades</h2>
+    <div class="skills-container-fluid">
+
+        <div class="skill-row">
+            <h3 class="skill-title">Backend</h3>
+            <div class="skill-tags flat">
                 <span>Java</span>
-                <span>HTML</span>
-                <span>CSS</span>
+                <span>Spring Boot</span>
+                <span>C#</span>
+                <span>PHP</span>
+                <span>Python</span>
             </div>
-        </article>
-        <!-- Tarjeta de Proyecto 2 -->
-        <article class="project-card">
-            <div class="project-badge font-design">Diseño</div>
-            <h3>Laboratorio 1: Configuración & Git</h3>
-            <p>
-                Establecimiento del entorno de desarrollo global e
-                introducción a los comandos esenciales de consola
-                para el control de versiones.
-            </p>
-            <div class="project-tech">
-                <span>Git</span>
-                <span>Bash</span>
-                <span>Node.js</span>
+        </div>
+
+        <div class="skill-row">
+            <h3 class="skill-title">Frontend</h3>
+            <div class="skill-tags flat">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
             </div>
-        </article>
-        <!-- Tarjeta de Proyecto 3 -->
-        <article class="project-card">
-            <div class="project-badge font-api">API</div>
-            <h3>Proyecto Integrador (Avance 1)</h3>
-            <p>
-                Planificación de la base de datos relacional y
-                modelado inicial de una API RESTful para el
-                sistema empresarial acumulativo.
-            </p>
-            <div class="project-tech">
-                <span>SQL</span>
-                <span>REST</span>
-                <span>JSON</span>
+        </div>
+
+        <div class="skill-row">
+            <h3 class="skill-title">Bases de Datos & Tools</h3>
+            <div class="skill-tags flat">
+                <span>MySQL</span>
+                <span>SQL Server</span>
+                <span>Git & GitHub</span>
             </div>
-        </article>
+        </div>
+
     </div>
-</main>
-<!-- Pie de Página -->
+</section>
+
+<!-- Sección de Contacto (Enlaces Flotantes) -->
+<section id="contacto" class="contact-section minimal">
+    <h2>Hablemos</h2>
+    <p class="contact-subtitle">¿Tienes un proyecto en mente, una oportunidad o simplemente quieres conectar?</p>
+
+    <div class="contact-links-minimal">
+        <a href="https://github.com/Konny-aguero" target="_blank" class="link-item">
+            <span class="link-text">GitHub</span>
+            <span class="link-line"></span>
+        </a>
+        <a href="https://wa.me/50661589286" target="_blank" class="link-item">
+            <span class="link-text">WhatsApp</span>
+            <span class="link-line"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/konny-agüero-díaz-656855407" target="_blank" class="link-item">
+            <span class="link-text">LinkedIn</span>
+            <span class="link-line"></span>
+        </a>
+    </div>
+</section>
+
+<!-- Pie de Página Académico -->
 <footer class="app-footer">
-    <p>© 2026 Universidad de Costa Rica - Informática Empresarial</p>
-    <p>Desarrollo de Software IV | Recinto de Paraíso</p>
+    <p>© 2026 Konny Agüero Díaz • Estudiante de Informática Empresarial</p>
 </footer>
+
 </body>
 </html>
